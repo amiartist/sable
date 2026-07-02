@@ -228,9 +228,21 @@ footer {
     left: 0;
     padding: 0 100px;
     color: var(--white);
+    & .branding a {
+        &:hover {
+            color: var(--spicy);
+        }
+    }
     & ul {
         display: flex;
         align-items: center;
         gap: 16px;
+    }
+    & a {
+        color: var(--white);
+        transition: color 0.2s linear;
+        &:hover {
+            color: var(--spicy);
+        }
     }
 }
