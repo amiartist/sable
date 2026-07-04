@@ -80,7 +80,7 @@ function showDay(dayNumber) {
 
     const index = dayNumber - 1;
     taskTitleEl.textContent = seaData.tasks[index] ?? '';
-    todayEl.textContent = `День #${dayNumber}`;
+    todayEl.textContent = `День ${dayNumber}`;
     hintTextEl.textContent = seaData.hints[index] ?? '';
     lvlupTextEl.textContent = seaData.lvlups[index] ?? '';
     resetBlur();
@@ -113,7 +113,7 @@ function initDayClicks() {
 }
 
 async function init() {
-    monthlyThemeEl.textContent = 'Море';
+    monthlyThemeEl.textContent = '«Море»';
 
     try {
         seaData = await loadSeaData();
